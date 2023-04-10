@@ -1,0 +1,28 @@
+.debug-container {
+  width: 200px;
+  height: 200px;
+  position: absolute;
+  right: 0;
+  top: 0;
+  pointer-events: none;
+
+  .title {
+    margin: 0 0.25rem;
+  }
+
+  .key {
+    margin: 0.25rem 1rem;
+
+    .value {
+      padding: 0.5rem;
+
+      &.true {
+        color: green;
+      }
+
+      &.false {
+        color: red;
+      }
+    }
+  }
+}

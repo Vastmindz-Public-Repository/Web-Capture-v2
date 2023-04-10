@@ -1,0 +1,58 @@
+@import 'assets/styles/variables';
+
+.rate-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0.75rem;
+  width: 15rem;
+  background-color: $mine-shaft;
+  border-radius: 6px;
+  overflow: hidden;
+
+  .rate-container-title {
+    font-size: 1.25rem;
+    font-weight: bold;
+    margin-top: 1.5rem;
+    margin-bottom: 1rem;
+  }
+
+  .rate-container-value {
+    font-size: 4rem;
+    margin-bottom: 2rem;
+
+    .rate-container-value-unit {
+      font-size: 1.5rem;
+    }
+
+    .warning-image {
+      font-size: 1.5rem;
+      height: 5.8rem;
+    }
+  }
+
+  .rate-container-type {
+    font-size: 1.25rem;
+    padding: 0.5rem;
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+
+    &.good {
+      background-color: $light-green;
+    }
+
+    &.attention {
+      background-color: $amber;
+    }
+
+    &.optimal {
+      background-color: $dark-green;
+    }
+  }
+}
+
+
+
+

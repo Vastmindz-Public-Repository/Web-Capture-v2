@@ -1,0 +1,206 @@
+{
+  "name": "teamsfx-template-tab",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@fluentui/react": "^8.97.2",
+    "@fluentui/react-components": "^9.6.1",
+    "@fluentui/react-northstar": "^0.64.0",
+    "@fluentui/react-teams": "^6.1.2",
+    "@mediapipe/camera_utils": "^0.3.1640029074",
+    "@mediapipe/drawing_utils": "^0.3.1620248257",
+    "@mediapipe/face_mesh": "^0.4.1633559619",
+    "@microsoft/mgt-element": "^2.4.1-next.teamsfx.8d56785",
+    "@microsoft/mgt-react": "^2.4.1-next.teamsfx.8d56785",
+    "@microsoft/mgt-teamsfx-provider": "^2.4.1-next.teamsfx.8d56785",
+    "@microsoft/teams-js": "^2.2.0",
+    "@microsoft/teamsfx": "^2.0.0-beta.0",
+    "@microsoft/teamsfx-react": "^2.0.0-beta.1",
+    "@mui/material": "^5.11.10",
+    "@types/react-lottie": "^1.2.6",
+    "axios": "^0.21.1",
+    "current-device": "^0.10.2",
+    "mock-progress-react": "^1.0.8",
+    "msteams-react-base-component": "^4.0.1",
+    "npm": "^8.19.2",
+    "react": "^17.0.2",
+    "react-animated-progress-bar": "^1.1.1",
+    "react-circular-progressbar": "^2.1.0",
+    "react-dom": "^17.0.2",
+    "react-jss": "^10.9.2",
+    "react-lottie": "^1.2.3",
+    "react-responsive": "^9.0.0",
+    "react-router-dom": "^5.1.2",
+    "react-scripts": "^4.0.3",
+    "react-slide-fade-in": "^1.0.9",
+    "react-spinners": "^0.13.5",
+    "rppg": "file:local_modules/rppg",
+    "source-map-explorer": "^2.5.3"
+  },
+  "devDependencies": {
+    "@types/node": "^12.0.0",
+    "@types/react": "^16.14.6",
+    "@types/react-dom": "^16.9.12",
+    "@types/react-router-dom": "^5.1.7",
+    "cross-env": "^7.0.3",
+    "env-cmd": "^10.1.0",
+    "eslint-plugin-react-hooks": "^4.6.0",
+    "react-error-overlay": "^6.0.9",
+    "sass": "^1.54.9",
+    "typescript": "^4.1.2"
+  },
+  "resolutions": {
+    "react-error-overlay": "6.0.9"
+  },
+  "scripts": {
+    "start": "cross-env react-scripts start",
+    "build": "cross-env react-scripts build"
+  },
+  "eslintConfig": {
+    "parser": "@typescript-eslint/parser",
+    "plugins": [
+      "@typescript-eslint",
+      "react",
+      "react-hooks"
+    ],
+    "parserOptions": {
+      "ecmaVersion": 2020
+    },
+    "extends": [
+      "eslint:recommended",
+      "plugin:@typescript-eslint/recommended",
+      "react-app",
+      "react-app/jest"
+    ],
+    "rules": {
+      "no-magic-numbers": [
+        "error",
+        {
+          "enforceConst": true,
+          "ignore": [
+            0,
+            1,
+            -1,
+            2,
+            90,
+            180,
+            270,
+            360
+          ]
+        }
+      ],
+      "no-multi-spaces": "error",
+      "no-multi-str": "error",
+      "no-self-assign": "error",
+      "no-self-compare": "error",
+      "no-sequences": "error",
+      "block-spacing": [
+        "error",
+        "always"
+      ],
+      "comma-spacing": [
+        "error",
+        {
+          "before": false,
+          "after": true
+        }
+      ],
+      "comma-style": [
+        "error",
+        "last"
+      ],
+      "indent": [
+        "error",
+        2,
+        {
+          "MemberExpression": 1,
+          "SwitchCase": 1,
+          "FunctionDeclaration": {
+            "body": 1,
+            "parameters": 2
+          },
+          "FunctionExpression": {
+            "body": 1,
+            "parameters": 2
+          }
+        }
+      ],
+      "max-depth": [
+        "error",
+        4
+      ],
+      "max-len": [
+        "error",
+        {
+          "code": 120,
+          "tabWidth": 2,
+          "ignoreUrls": true
+        }
+      ],
+      "no-mixed-spaces-and-tabs": "error",
+      "no-multiple-empty-lines": [
+        "error",
+        {
+          "max": 2
+        }
+      ],
+      "no-trailing-spaces": [
+        "error",
+        {
+          "skipBlankLines": false
+        }
+      ],
+      "semi": [
+        "error",
+        "never"
+      ],
+      "semi-spacing": "error",
+      "sort-vars": "error",
+      "space-before-blocks": "error",
+      "space-before-function-paren": [
+        "error",
+        {
+          "anonymous": "never",
+          "named": "never"
+        }
+      ],
+      "quotes": [
+        "warn",
+        "single"
+      ],
+      "comma-dangle": [
+        "warn",
+        {
+          "arrays": "always-multiline",
+          "objects": "always-multiline",
+          "imports": "always-multiline",
+          "exports": "always-multiline",
+          "functions": "only-multiline"
+        }
+      ],
+      "@typescript-eslint/ban-ts-comment": [
+        "warn"
+      ],
+      "@typescript-eslint/explicit-module-boundary-types": "off",
+      "@typescript-eslint/no-var-requires": "off",
+      "no-debugger": [
+        "warn"
+      ],
+      "react-hooks/rules-of-hooks": "error",
+      "react-hooks/exhaustive-deps": "error"
+    }
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "homepage": "."
+}

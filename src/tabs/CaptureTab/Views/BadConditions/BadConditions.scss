@@ -1,0 +1,52 @@
+@import 'assets/styles/variables';
+
+.bad-conditions-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 98vh;
+  color: $white;
+  font-size: $font-size-medium;
+  text-align: center;
+  max-width: 33.5rem;
+  margin: 0 auto;
+
+  .title-error {
+    color: $carnation;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5rem;
+    margin-bottom: 1.75rem;
+
+    &:before {
+      background-image: url('/assets/images/error-icon.svg');
+      content: '';
+      width: 2.5rem;
+      height: 2.5rem;
+      display: inline-block;
+      background-position: 50%;
+      background-repeat: no-repeat;
+      margin-right: 0.25rem;
+      transform: scale(2);
+    }
+  }
+
+  .message-container {
+    margin-bottom: 2.85rem;
+    
+    .title {
+      font-size: 1.25rem;
+      font-weight: bold;
+      margin-bottom: 0.5rem;
+    }
+  
+    .content {
+      font-size: 0.875rem;
+      padding: 0 1rem;
+    }
+  }
+
+
+}

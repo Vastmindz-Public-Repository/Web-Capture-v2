@@ -1,0 +1,45 @@
+//@import url('https://fonts.cdnfonts.com/css/segoe-ui-4');
+
+@font-face {
+    font-family: "Segoe UI";
+    font-style: normal;
+    font-weight: normal;
+    src: local("Segoe UI Regular"), url("../fonts/Segoe UI.woff") format("woff");
+  }
+  
+  @font-face {
+    font-family: "Segoe UI Italic";
+    font-style: normal;
+    font-weight: normal;
+    src: local("Segoe UI Italic"), url("../fonts/Segoe UI Italic.woff") format("woff");
+  }
+  
+  @font-face {
+    font-family: "Segoe UI Bold";
+    font-style: normal;
+    font-weight: normal;
+    src: local("Segoe UI Bold"), url("../fonts/Segoe UI Bold.woff") format("woff");
+  }
+  
+  @font-face {
+    font-family: "Segoe UI Bold Italic";
+    font-style: normal;
+    font-weight: normal;
+    src: local("Segoe UI Bold Italic"),
+      url("../fonts/Segoe UI Bold Italic.woff") format("woff");
+  }
+  
+  $font-family-base: "Segoe UI", sans-serif;
+  
+  $font-size-large: 1.5rem;
+  $font-size-medium: 1.125rem; // 18px
+  $font-size-normal: 1rem; // 16px
+  $font-size-small: 0.875rem; // 14px
+  $font-size-tiny: 0.8125rem;
+  $font-size-nano: 0.75rem;
+  
+  $font-weight-light: 300;
+  $font-weight-normal: 400;
+  $font-weight-bold: 700;
+  
+  $font-line-height-large: 2.25rem;

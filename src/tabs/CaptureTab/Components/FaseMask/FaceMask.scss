@@ -1,0 +1,34 @@
+@import 'assets/styles/variables';
+
+.face-mask-wrapper {
+  position: absolute;
+  left: 50%;
+  top: 35%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  height: 65%;
+  overflow: hidden;
+
+  .face-mask {
+    background-color: $inch-worm;
+    mask-image: url('/assets/images/face-mask.svg');
+    mask-image: url('/assets/images/face-mask.svg');
+    mask-size: contain;
+    mask-repeat: no-repeat;
+    mask-position: center;
+    height: 100%;
+    
+    &.error {
+      background-color: $white;
+      animation: tilt-shaking 0.25s infinite;
+    }
+  }
+
+  @keyframes tilt-shaking {
+    0% { transform: translateX(0); }
+    25% { transform: translateX(5px); }
+    50% { transform: translateX(0); }
+    75% { transform: translateX(-5px); }
+    100% { transform: translateX(0); }
+  }
+}

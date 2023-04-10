@@ -1,0 +1,82 @@
+@import 'assets/styles/variables';
+
+.score-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-width: 20rem;
+  max-width: 450px;
+  padding: 2rem;
+  background-color: $mine-shaft;
+  height: 500px;
+  border-radius: 6px;
+  overflow: hidden;
+
+  .score-title {
+    margin-bottom: 3rem;
+    font-size: 1.25rem;
+    font-weight: bold;
+  }
+
+  .score-progress {
+    width: 13.5rem;
+    height: 13.5rem;
+    margin-bottom: 3rem;
+
+    .score-progress-value-container {
+      color: $tundora;
+      text-align: center;
+
+      .score-progress-value {
+        font-size: 4rem;
+      }
+
+      .score-progress-type {
+        font-size: 1.25rem;
+        color: $white;
+      }
+    }
+
+    .CircularProgressbar-path {
+      stroke: $limeade;
+      stroke-width: 5px;
+      stroke-linecap: butt;
+    }
+
+    .CircularProgressbar-trail {
+      stroke: $cod-grey;
+      stroke-width: 5px;
+    }
+
+    &.low {
+      .score-progress-value-container {
+        color: $brick-red;
+      }
+      .CircularProgressbar-path {
+        stroke: $brick-red;
+      }
+    }
+    &.medium {
+      .score-progress-value-container {
+        color: $amber;
+      }
+      .CircularProgressbar-path {
+        stroke: $amber;
+      }
+    }
+    &.optimal {
+      .score-progress-value-container {
+        color: $limeade;
+      }
+      .CircularProgressbar-path {
+        stroke: $limeade;
+      }
+    }
+  }
+
+  .score-footer {
+    font-size: 0.875rem;
+    text-align: center;
+  }
+}
